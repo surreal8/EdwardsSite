@@ -51,20 +51,34 @@ $sidebar_id =  $qode_page_id;
             </div>
             <div id="related_glossary">
             <?php
-			//related glossary pages
-			$posts = get_field('relationship_posts');
-			if ($posts) {
+			if (get_field('artist_acquisitions') || get_field('artist_exhibitions') || get_field('artist_writings') || get_field('artist_media')) { 
 				echo '<p class="spacer"></p>';
 				echo '<ul class="related-list">';
-				echo '<li class="relatedside">';
-				echo '<h3 class="related">Related Glossary Pages</h3>';
-				foreach($posts as $post):
-				  setup_postdata($post);
-				  echo '<p><a href="'.get_permalink().'">'.get_the_title().'</a></p>';
-				endforeach;
-				echo '</li>';
+				if (get_field('artist_acquisitions')) {
+				  echo '<li class="relatedside">';
+				  echo '<h3 class="related">Artist Aquisitions</h3>';
+				  echo '<p>' . get_field('artist_acquisitions') . '</p>'; 
+				  echo '</li>';
+				}
+				if (get_field('artist_exhibitions')) {
+				  echo '<li class="relatedside">';
+				  echo '<h3 class="related">Artist Exhibitions</h3>';
+				  echo '<p>' . get_field('artist_exhibitions') . '</p>'; 
+				  echo '</li>';
+				}
+				if (get_field('artist_writings')) {
+				  echo '<li class="relatedside">';
+				  echo '<h3 class="related">Artist Writings</h3>';
+				  echo '<p>' . get_field('artist_writings') . '</p>'; 
+				  echo '</li>';
+				}
+				if (get_field('artist_media')) {
+				  echo '<li class="relatedside">';
+				  echo '<h3 class="related">Artist Media</h3>';
+				  echo '<p>' . get_field('artist_media') . '</p>'; 
+				  echo '</li>';
+				}
 				echo '</ul>';
-				wp_reset_postdata();
 			  }		
 			?>   
             </div>

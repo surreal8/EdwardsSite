@@ -19,7 +19,6 @@ if (is_array($portfolio_images)){
 	usort($portfolio_images, "comparePortfolioImages");
 }
 ?>
-<div> <a href="<?php echo home_url('/'); ?>" class="return_home">< Return To All Photographs</a> </div>
 <div class="flexslider">
 	<ul class="slides">
 		<?php
@@ -140,24 +139,32 @@ if (is_array($portfolio_images)){
 				<?php the_content(); ?>
                 <p>&nbsp;</p>
                 <?php
-				  $posts = get_field('related_posts');
-				  if ($posts) {
+				  
+				  if (get_field('selected_exhibitions') || get_field('selected_writings') || get_field('related_media')) { 
 					echo '<p class="spacer"></p>';
-					echo '<h3 class="related">Related Glossary Pages</h3>';
 					echo '<ul class="related-list">';
-					foreach($posts as $post):
-					  setup_postdata($post);
+					if (get_field('selected_exhibitions')) {
 					  echo '<li class="related">';
-					  $categories = get_the_category();
- 					  if ( ! empty( $categories ) ) {
-					    echo '<p class="artist_cat">' . esc_html( $categories[0]->name ) . '</p>';   
-					  }
-					  echo '<h4>' . get_the_title() . '</h4>';
-					  qode_excerpt();
+					  echo '<h3 class="related">Selected Exhibitions</h3>';
+					  echo '<span class="viewall"><a href="' . get_field('view_all_selected_exhibitions') . '">VIEW ALL</a></span>'; 
+					  echo '<p>' . get_field('selected_exhibitions') . '</p>'; 
 					  echo '</li>';
-					endforeach;
+					}
+					if (get_field('selected_writings')) {
+					  echo '<li class="related">';
+					  echo '<h3 class="related">Selected Writings</h3>';
+					  echo '<span class="viewall"><a href="' . get_field('view_all_selected_writings') . '">VIEW ALL</a></span>';
+					  echo '<p>' . get_field('selected_writings') . '</p>'; 
+					  echo '</li>';
+					}
+					if (get_field('related_media')) {
+					  echo '<li class="related">';
+					  echo '<h3 class="related">Related Media</h3>';
+					  echo '<span class="viewall"><a href="' . get_field('view_all_related_media') . '">VIEW ALL</a></span>';
+					  echo '<p>' . get_field('related_media') . '</p>'; 
+					  echo '</li>';
+					}
 					echo '</ul>';
-					wp_reset_postdata();
 				  }		
 				?>
 			</div>
@@ -171,20 +178,15 @@ if (is_array($portfolio_images)){
 				  echo '<ul class="related-list">';
 				  	if (get_field('object_research')) {
 					  echo '<li class="relatedside">';
-					  echo '<h3 class="related">Object Research</h3>';
+					  echo '<h3 class="related">Selected Acquisitions</h3>';
+					  echo '<span class="viewall"><a href="' . get_field('view_all_selected_acquisitions') . '">VIEW ALL</a></span>';
 					  echo '<p>' . get_field('object_research') . '</p>'; 
 				      echo '</li>';
 				    }
 				    if (get_field('primary_sources')) {
 					  echo '<li class="relatedside">';
-					  echo '<h3 class="related">Key Sources</h3>';
+					  echo '<h3 class="related">Artists</h3>';
 					  echo '<p>' . get_field('primary_sources') . '</p>'; 
-				      echo '</li>';
-				    }
-					if (get_field('other_collections')) {
-					  echo '<li class="relatedside">';
-					  echo '<h3 class="related">In Other Stieglitz Collections</h3>';
-					  echo '<p>' . get_field('other_collections') . '</p>'; 
 				      echo '</li>';
 				    }
 				  echo '</ul>';
