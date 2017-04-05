@@ -351,8 +351,24 @@ $_post_format = get_post_format();
 							  echo '<p class="tombstone">' . $origin . '</p>'; 
 							 }
 							?>
-							<?php the_content(); ?>
+							
+							<?php 
+							//adding selected artworks title before portfolio list'
+							add_filter( 'the_content', 'insert_title' ); 
+ 
+							function insert_title( $content ) { 
+								if ( is_singular('post')) {
+									$title_div = '<p>&nbsp;</p><p>&nbsp;</p><h3 class="selected_artworks">Selected Artworks</h3>[portfolio_list type="standard"';
+									$content = preg_replace('/(\[portfolio_list type="standard")/', $title_div, $content);
+									}
+								return $content;
+							}
+							the_content(); 
+							?>
+                            
 							<div class="clear"></div>
+                            
+                           
 							<?php if(do_shortcode('[social_share_list]') != ""){ ?>
 								<div class="post_social">
 									<?php echo do_shortcode('[social_share_list]'); ?>

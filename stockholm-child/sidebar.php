@@ -49,7 +49,7 @@ $sidebar_id =  $qode_page_id;
 			 }
 			?>
             </div>
-            <div id="related_glossary">
+            <div id="related_artist">
             <?php
 			if (get_field('artist_acquisitions') || get_field('artist_exhibitions') || get_field('artist_writings') || get_field('artist_media')) { 
 				echo '<p class="spacer"></p>';

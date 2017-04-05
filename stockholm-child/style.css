@@ -40,10 +40,11 @@ Template: stockholm
 @font-face {font-family: 'Garibaldi-Medium';src: url('webfonts/30C26B_0_0.eot');src: url('webfonts/30C26B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30C26B_0_0.woff2') format('woff2'),url('webfonts/30C26B_0_0.woff') format('woff'),url('webfonts/30C26B_0_0.ttf') format('truetype');}
 
 body {
-	color: #3a3a3a;
-	font-size: 16px;
+	color: #272727;
+	font-size: 12px;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #F0F0F0;
+	font-family: 'Lato', sans-serif;
 }
 
 body, .wrapper, .content, .full_width, .content .container, .more_facts_holder {
@@ -60,7 +61,7 @@ body, .wrapper, .content, .full_width, .content .container, .more_facts_holder {
 
 .portfolio_container, .blog_holder { 
 	font-family: 'Lato', sans-serif;
-	line-height: 1.5em;
+	line-height: 1.75em;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 12px;
 }
@@ -80,6 +81,8 @@ h3 {
 
 .blog_holder article h2 {
 	margin: 0;
+	padding-bottom: 15px;
+	letter-spacing: normal;
 }
 
 .blog_holder .filter_outer.left_align, .blog_holder .filter_holder{
@@ -127,7 +130,7 @@ h3 {
 }
 
 a, p a {
-    color: #34570C;
+    color: #004278;
 	text-decoration: underline;
 	font-weight: 500;
 	font-family: 'Garibaldi-Medium', serif; 
@@ -146,7 +149,7 @@ a, p a {
 
 
 header:not(.with_hover_bg_color) nav.main_menu>ul>li:hover>a, nav.main_menu>ul>li.active>a, .q_tabs .tabs-nav li.active a, .q_tabs .tabs-nav li a:hover, #glossaryNav a:hover, #glossaryNav a:active {
-	color: #466309;
+	color: #004278;
 	background-color: transparent;
 }
 
@@ -524,7 +527,7 @@ li.related p {
 	font-family: 'Garibaldi-Medium', serif; 
 	font-size: 13px;
     line-height: 1.35em;
-	padding-bottom: 5px;
+	padding: 0px 0px 5px 5px;
 }
 
 li.relatedside {
@@ -541,6 +544,7 @@ p.spacer {
 
 .portfolio_single h2.portfolio_single_text_title {
     margin: 0;
+	padding-bottom: 30px;
 }
 
 .vc_gitem-animated-block {
@@ -623,16 +627,20 @@ header {
 	color: #f0bd97;
 }
 
-h3.related {
+h3.related, .selected_artworks {
 	font-family: 'Amiri', serif;
     color: #000000;
-    border-top: #466309 6px solid;
-    padding: 12px 5px 10px 5px;
+    border-top: #004278 3px solid;
+    padding: 15px 5px 10px 5px;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 11px;
     letter-spacing: 1px;
 	line-height: 17px;
+}
+
+.selected_artworks {
+	border-top: #004278 6px solid;
 }
 
 .relatedside p, li.related {
@@ -644,9 +652,9 @@ h3.related {
 }
 
 h4 {
-	font-size: 23px;
+	font-size: 15px;
     color: #3a3a3a;
-    font-weight: lighter;
+    font-weight: normal;
     padding-bottom: 10px;
     line-height: 25px;
 }
@@ -680,7 +688,7 @@ h4 {
 
 #glossaryNav, .q_tabs .tabs-nav {
 	padding: 15px 0px;
-	color: #bebdbd;
+	color: #272727;
 	width: 100%;
 	display: block;
 	overflow: visible;
@@ -898,7 +906,8 @@ body div.pp_default a.pp_previous {
 }
 
 .single-post .projects_holder_outer {
-	padding-top: 30px;
+	margin-top: -30px;
+	margin-bottom: 100px;
 }
 
 .tos-desktop .tos-wrapper.tos-fixed {
@@ -973,7 +982,7 @@ nav.main_menu.right {
 
 .viewall {
 	background-color: #ffffff;
-    padding: 6px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     float: right;
     top: -30px;
@@ -982,6 +991,244 @@ nav.main_menu.right {
 
 .viewall a {
 	text-decoration: none;
-	font-size: 10px;
+	font-size: 8px;
     font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.edwardsHome img.vc_single_image-img {
+	left: 60%;
+    position: relative;
+    width: 340px;
+    height: 400px;
+}
+
+.edwardsHomeText div.wpb_wrapper {
+	width: 379px;
+    height: 275px;
+    right: -45.75%;
+    position: relative;
+    line-height: 1.75;
+    border: #004278 6px solid;
+    top: -385px;
+    padding: 40px 0 40px 0px;
+}
+
+.edwardsHomeText h6 {
+	font-family: 'Amiri', serif;
+	font-size: 8px;
+	color: #272727;
+	letter-spacing: 1px;
+	position: relative;
+	left: 60px;
+}
+
+.edwardsHomeText h3 {
+	font-family: 'Amiri', serif;
+	font-size: 32px;
+	color: #272727;
+	letter-spacing: 0px;
+	padding: 5px 0px; 
+	position: relative;
+	left: 60px;
+}
+
+.edwardsHomeText h5 {
+	font-family: 'Amiri', serif;
+	font-size: 8px;
+	color: #272727;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 14px;
+	padding-bottom: 5px;
+	position: relative;
+	left: 60px;
+}
+
+.edwardsHomeText p {
+	position: relative;
+	left: 60px;
+	width: 256px;
+}
+
+hr.doublelines {
+    padding: 0;
+    border: none;
+    border-top: 4px double #979797;
+    text-align: center;
+	font-weight: bold;
+    letter-spacing: 1px;
+	position: relative;
+	top: -315px;
+}
+
+hr.doublelines:after {
+    content: "EXPLORE HUGH EDWARDS' LEGACY";
+    display: inline-block;
+    position: relative;
+    top: -1.3em;
+    font-size: 11px;
+    padding: 0 0.5em;
+    background: #F0F0F0;
+	font-family: 'Amiri', serif;
+}
+
+.themeshr hr.doublelines {
+    padding: 0;
+    border: none;
+    border-top: 4px double #979797;
+    text-align: center;
+	font-weight: bold;
+    letter-spacing: 1px;
+	position: relative;
+	top: -245px;
+}
+
+.themeshr hr.doublelines:after {
+    content: "EXPLORE THEMES";
+    display: inline-block;
+    position: relative;
+    top: -1.3em;
+    font-size: 11px;
+    padding: 0 0.5em;
+    background: #F0F0F0;
+	font-family: 'Amiri', serif;
+}
+
+div.homepage_menu {
+	top: 465px;
+}
+
+.homepage_menu p {
+	font-family: 'Amiri', serif;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+    top: -285px;
+    letter-spacing: 2px;
+    left: 25%;
+}
+
+.homepage_menu a{
+	text-decoration: none;
+	color: #272727;
+}
+
+.homepage_menu a:hover{
+	color: #004278;
+}
+
+
+.themes {
+	position: relative;
+	top: -210px;
+}
+
+.themes p {
+	width: 379px;	
+}
+
+.themes ul {
+	padding-bottom: 60px;
+}
+
+li.themeHeading, li.themeHeading2 {
+	padding: 0px 85px 0px 85px;
+    width: 30%;
+    display: inline-table;
+    margin-bottom: 20px;
+}
+
+li.themeHeading2 {
+	float: right;
+	width: 379px;
+}
+
+.themes ul:last-child {
+	text-align: center;	
+}
+
+.themes img {
+	border: 5px #004278 solid;
+	width: 369px;
+	height: 261px;
+}
+
+div.themeHeading {
+	font-family: 'Amiri', serif;
+	font-size: 22px;
+	text-align: center;
+	padding: 20px 0px;
+	border-bottom: 5px #004278 solid;
+	top: -7px;
+	position: relative;
+	letter-spacing: 2px;
+}
+
+.themeHeading a{
+	text-decoration: none;
+	color: #272727;
+}
+
+.themeHeading a:hover{
+	color: #004278;
+}
+
+footer {
+	/*display: none;*/
+}
+
+.q_accordion_holder.accordion .ui-accordion-header.ui-state-active .accordion_mark {
+	background-color: #004278;
+	border: none;
+}
+
+.q_accordion_holder .ui-accordion-header .accordion_mark {
+	background-color: #004278;
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+
+.q_accordion_holder.accordion .ui-accordion-header .accordion_mark_icon {
+	color: #ffffff;
+}
+
+.q_accordion_holder.accordion .ui-accordion-header .accordion_mark_icon span {
+	line-height: 1em;
+}
+
+.q_list.circle ul>li:before {
+	background-color: #272727;
+}
+
+.q_accordion_holder.accordion:not(.boxed) .ui-accordion-header span.tab-title-inner {
+	display: inline;
+}
+
+ .q_accordion_holder.accordion .ui-accordion-header {
+	 height: 30px;
+ }
+ 
+ .q_list.circle ul>li, .q_list.number ul>li {
+	margin-bottom: 5px; 
+ }
+ 
+ .q_accordion_holder {
+	 padding-top: 20px;
+ }
+ 
+ #related_artist {
+	 top: 35px;
+	 position: relative;
+ }
+
+.projects_holder.standard article .portfolio_description {
+	display: none;
+}
+
+.projects_holder article .image_holder {
+	width: 80%;
+    padding: 20px 0px 0px 20px;
 }
