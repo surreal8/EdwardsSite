@@ -1000,19 +1000,20 @@ nav.main_menu.right {
 .edwardsHome img.vc_single_image-img {
 	left: 60%;
     position: relative;
-    width: 340px;
-    height: 400px;
+    width: 405px;
+    height: 553px;
 }
 
 .edwardsHomeText div.wpb_wrapper {
 	width: 379px;
-    height: 275px;
-    right: -45.75%;
+    height: 450px;
+    right: -55.45%;
     position: relative;
     line-height: 1.75;
     border: #004278 6px solid;
-    top: -385px;
-    padding: 40px 0 40px 0px;
+    top: -528px;
+    padding: 40px 0 0px 0px;
+	margin-bottom: -130px;
 }
 
 .edwardsHomeText h6 {
@@ -1050,7 +1051,7 @@ nav.main_menu.right {
 .edwardsHomeText p {
 	position: relative;
 	left: 60px;
-	width: 256px;
+	width: 274px;
 }
 
 hr.doublelines {
@@ -1065,7 +1066,7 @@ hr.doublelines {
 }
 
 hr.doublelines:after {
-    content: "EXPLORE HUGH EDWARDS' LEGACY";
+    content: "EXPLORE HUGH EDWARDS'S LEGACY";
     display: inline-block;
     position: relative;
     top: -1.3em;
@@ -1127,7 +1128,9 @@ div.homepage_menu {
 }
 
 .themes p {
-	width: 379px;	
+	width: 350px;
+    padding: 15px 15px 0px 15px;
+	text-align: left;
 }
 
 .themes ul {
