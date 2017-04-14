@@ -51,6 +51,19 @@ else { $paged = 1; }
 				<?php if(($sidebar == "default")||($sidebar == "")) : ?>
 					<?php if (have_posts()) : 
 							while (have_posts()) : the_post(); ?>
+                            
+                            <!--add back button if pages have pdfs-->
+							<?php if (get_field('pdf')) { ?>
+                            	<p>&nbsp;</p>
+                                <button onclick="goBack()">Go Back</button>
+                                <p>&nbsp;</p>
+								
+								<script>
+								function goBack() {
+									window.history.back();
+									}
+                                </script>
+							<?php } ?>
 							<?php the_content(); ?>
 							<?php 
 								$args_pages = array(
