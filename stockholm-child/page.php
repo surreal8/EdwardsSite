@@ -65,6 +65,7 @@ else { $paged = 1; }
                                 </script>
 							<?php } ?>
 							<?php the_content(); ?>
+                            <p>&nbsp;</p><p>&nbsp;</p>
 							<?php 
 								$args_pages = array(
 									'before'           => '<p class="single_links_pages">',
