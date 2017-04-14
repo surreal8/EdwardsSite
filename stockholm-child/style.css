@@ -66,7 +66,7 @@ body, .wrapper, .content, .full_width, .content .container, .more_facts_holder {
 	font-size: 12px;
 }
 
-h2, h3 {
+h1, h2, h3 {
 	font-weight: normal;
     text-transform: none;
 	font-size: 32px;
@@ -77,6 +77,13 @@ h2, h3 {
 h3 {
 	font-size: 20px;
 	color: #393939;
+}
+
+h1 {
+	font-size: 36px;
+	color: #393939;
+	letter-spacing: 0px;
+	padding-bottom: 15px;
 }
 
 .blog_holder article h2 {
@@ -1242,4 +1249,26 @@ footer {
 
 .two_columns_75_25>.column1>.column_inner {
     padding: 0 70px 0 0;
+}
+
+.page_header {
+    left: 20px;
+    position: relative;
+}
+
+div.media1 {
+	border-bottom: 6px solid #004278;
+	padding-top: 60px;
+}
+
+div.media {
+	border-bottom: 2px solid #004278;
+}
+
+.separator.normal {
+	border-color: #004278;
+}
+
+.soundcloud {
+	padding: 30px 0px;
 }
