@@ -68,13 +68,13 @@ $sidebar_id =  $qode_page_id;
 				}
 				if (get_field('artist_writings')) {
 				  echo '<li class="relatedside">';
-				  echo '<h3 class="related">Artist Writings</h3>';
+				  echo '<h3 class="related">Writings</h3>';
 				  echo '<p>' . get_field('artist_writings') . '</p>'; 
 				  echo '</li>';
 				}
 				if (get_field('artist_media')) {
 				  echo '<li class="relatedside">';
-				  echo '<h3 class="related">Artist Media</h3>';
+				  echo '<h3 class="related">Media</h3>';
 				  echo '<p>' . get_field('artist_media') . '</p>'; 
 				  echo '</li>';
 				}
