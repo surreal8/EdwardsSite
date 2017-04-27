@@ -1014,7 +1014,7 @@ nav.main_menu.right {
 }
 
 .edwardsHome img.vc_single_image-img {
-	left: 60%;
+	left: 40%;
     position: relative;
     width: 368px;
     height: 494px;
@@ -1023,7 +1023,7 @@ nav.main_menu.right {
 .edwardsHomeText div.wpb_wrapper {
 	width: 446px;
     height: 367px;
-    right: -49.65%;
+    right: -43%;
     position: relative;
     line-height: 1.75;
     border: #004278 6px solid;
@@ -1205,19 +1205,28 @@ footer {
 }
 
 .q_accordion_holder.accordion .ui-accordion-header.ui-state-active .accordion_mark {
-	background-color: #004278;
+	background-color: #ffffff;
 	border: none;
 }
 
 .q_accordion_holder .ui-accordion-header .accordion_mark {
-	background-color: #004278;
+	background-color: #ffffff;
 	border: none;
-	width: 20px;
-	height: 20px;
+	width: 17px;
+	height: 17px;
+	top: 9px;
+}
+
+.q_accordion_holder.accordion .ui-accordion-header.ui-state-hover .accordion_mark {
+    background-color: #004278;
 }
 
 .q_accordion_holder.accordion .ui-accordion-header .accordion_mark_icon {
-	color: #ffffff;
+	font-size: 16px;
+}
+
+.q_accordion_holder.accordion .ui-accordion-header .accordion_mark_icon, .q_accordion_holder.accordion .ui-accordion-header.ui-state-active .accordion_mark_icon {
+	color: #979797;
 }
 
 .q_accordion_holder.accordion .ui-accordion-header .accordion_mark_icon span {
@@ -1299,7 +1308,7 @@ div.media {
 	font-family: 'Amiri', serif;
 }
 
-.writings a, .acquisitions_artists a, .acquisitions a {
+.writings a, .acquisitions_artists a, .acquisitions a, .tab-title-inner {
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 }
@@ -1317,4 +1326,37 @@ div.media {
 
 .copyright {
 	font-size: 10px;
+}
+
+.accordion_content_inner {
+	font-size: 12px;
+}
+
+.q_list.circle ul>li:before {
+	width: 4px;
+	height: 4px;
+}
+
+.q_accordion_holder.accordion:not(.boxed) .ui-accordion-header span.tab-title {
+    padding: 0 0 0 25px;
+}
+	
+.q_accordion_holder.accordion div.accordion_content {
+    padding: 0 0 0 26px;
+}
+
+.arrow_carrot-up:after {
+	content: "";
+}
+
+.arrow_carrot-up:before {
+	content: "";
+}
+
+.arrow_carrot-down:after {
+	content: "";
+}
+
+.arrow_carrot-down:before {
+	content: "\33";
 }
