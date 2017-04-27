@@ -1016,20 +1016,20 @@ nav.main_menu.right {
 .edwardsHome img.vc_single_image-img {
 	left: 60%;
     position: relative;
-    width: 405px;
-    height: 553px;
+    width: 368px;
+    height: 494px;
 }
 
 .edwardsHomeText div.wpb_wrapper {
-	width: 379px;
-    height: 450px;
-    right: -55.45%;
+	width: 446px;
+    height: 367px;
+    right: -49.65%;
     position: relative;
     line-height: 1.75;
     border: #004278 6px solid;
-    top: -528px;
-    padding: 40px 0 0px 0px;
-	margin-bottom: -130px;
+    top: -455px;
+    padding: 35px 0px 0px 20px;
+    margin-bottom: -65px;
 }
 
 .edwardsHomeText h6 {
@@ -1067,7 +1067,12 @@ nav.main_menu.right {
 .edwardsHomeText p {
 	position: relative;
 	left: 60px;
-	width: 274px;
+	width: 350px;
+}
+
+.edwardsHomeText a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
 }
 
 hr.doublelines {
@@ -1308,4 +1313,8 @@ div.media {
 	width: 23%;
     display: inline-table;
     padding: 3px 20px 3px 0px;
+}
+
+.copyright {
+	font-size: 10px;
 }
