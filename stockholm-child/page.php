@@ -55,7 +55,7 @@ else { $paged = 1; }
                             <!--add back button if pages have pdfs-->
 							<?php if (get_field('pdf')) { ?>
                             	<p>&nbsp;</p>
-                                <button onclick="goBack()">Go Back</button>
+                                <button class="goback" onclick="goBack()">Go Back</button>
                                 <p>&nbsp;</p>
 								
 								<script>
