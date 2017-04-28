@@ -37,6 +37,10 @@ if($j('.portfolio_single_sticky').length){
 
 $j(document).ready(function() {
 	"use strict";
+	
+	$j('body').on('contextmenu', 'img', function(e) {
+	  return false;
+	});
 
 	$j('.content').css('min-height',$j(window).height()-$j('header.page_header').height()-$j('footer').height());
 
