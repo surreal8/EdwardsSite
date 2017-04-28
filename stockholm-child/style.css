@@ -762,12 +762,24 @@ body div.pp_default .pp_nav .currentTextHolder, body div.pp_default a.pp_arrow_p
 	color: #000000;
 }
 
+body div.pp_default .pp_description { 
+	font-family: 'Lato', sans-serif;
+}
+
 body div.pp_default a.pp_next {
     right: -61px;
 }
 
 body div.pp_default a.pp_previous {
     left: -61px;
+}
+
+body div.pp_default a.pp_next, body div.pp_default a.pp_previous {
+	opacity: 1;
+}
+
+body div.pp_default a.pp_next:hover, body div.pp_default a.pp_previous:hover {
+    background-color: #004278!important;
 }
 
 .flexslider .slides>li {
@@ -1253,7 +1265,8 @@ footer {
 }
 
 .projects_holder article .image_holder {
-    padding: 5px 0px 0px 20px;
+    padding: 5px 0px 0px 0;
+    margin-left: 20px;
 }
 
 .two_columns_66_33>.column1>.column_inner {
@@ -1360,4 +1373,19 @@ div.media {
     max-width: 1280px;
     height: 100%;
     width: auto;
+}
+
+.projects_holder article .icons_holder_inner {
+	margin: -69px 0 0 -50%;
+    /*background: burlywood;*/	
+}
+
+.projects_holder article .icons_holder a {
+	width: 182px;
+    height: 145px;
+    padding-top: 25%;
+}
+
+.projects_holder article .icons_holder a:hover {
+	color: #272727;
 }
