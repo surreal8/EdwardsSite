@@ -97,7 +97,6 @@ h1 {
 }
  
 .tombstone, .artistname, .related_caption {
-	font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.75em;
     font-weight: 100;
@@ -150,7 +149,6 @@ a, p a {
 }
 
 .related .readmore a, .readmore a{
-	font-family: 'Poppins', sans-serif;
 	font-size: 11px; 
 }
 
@@ -490,8 +488,8 @@ ol.flex-control-nav {
 }
 
 .flex-control-paging li a {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     display: block;
     background: #deddd9;
     cursor: pointer;
@@ -507,11 +505,7 @@ ol.flex-control-nav {
 }
 
 .portfolio_image_title, body div.pp_default .pp_nav .currentTextHolder, body div.pp_default .pp_description {
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    color: #3a3a3a;
-	font-weight: 300;
-	letter-spacing: 1px;
+    color: #272727;
 	font-style: normal;
 }
 
@@ -521,6 +515,7 @@ ol.flex-control-nav {
     bottom: 0px;
     text-align: center;
 	padding-top: 5px;
+	font-size: 10px;
 }
 
 li.related {
@@ -613,7 +608,6 @@ header {
 }
 
 .filter_holder ul li.parent_menu span {
-	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
     font-weight: 500;
@@ -677,7 +671,6 @@ h4 {
 }
 
 .return_home, #returnGlossary {
-	font-family: Poppins;
     color: #63122d;
     font-size: 12px;
     top: 25px;
@@ -690,7 +683,6 @@ h4 {
 }
 
 #returnGlossary a {
-	font-family: Poppins;
     color: #63122d;
     font-size: 13px;
 	text-decoration: none;
@@ -715,7 +707,6 @@ h4 {
 
 #artists, #processes, #galleries, #journals, #stieglitz-series, #themes {
 	color: #63122d;
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
     padding: 20px 0px 40px 25px;
@@ -756,7 +747,6 @@ h4 {
 }
 
 li.related p.artist_cat {
-	font-family: 'Poppins', sans-serif;
     font-size: 9px;
     text-transform: uppercase;
     font-weight: 600;
@@ -815,7 +805,6 @@ body div.pp_default a.pp_previous {
 
 .siteTitle, .siteInvite, .siteSubject {
 	text-align: center;
-	font-family: 'Poppins', sans-serif; 
 	font-size: 15px;
 	letter-spacing: 2px;
 	font-weight: initial;
@@ -852,7 +841,6 @@ body div.pp_default a.pp_previous {
 }
 
 #filterSelect {
-	font-family: 'Poppins', sans-serif; 
 	display: none;
 	top: 70px;
     position: relative;
@@ -876,7 +864,6 @@ body div.pp_default a.pp_previous {
 
 .footer_bottom {
 	font-size: 13px;
-	font-family: 'Poppins', sans-serif; 
 	-moz-osx-font-smoothing: grayscale;
 	font-weight: 200;
 }
@@ -895,7 +882,6 @@ body div.pp_default a.pp_previous {
 }
 
 .projects_holder.hover_text article .project_category {
-	font-family: 'Poppins', sans-serif; 
 	font-weight: 600;
 	text-transform:uppercase;
 }
@@ -944,10 +930,10 @@ body div.pp_default a.pp_previous {
     background: #a6a6a6;
     border-radius: 0px;
     width: 60px;
+	opacity: 0.5;
 }
 
 .tos-caption {
-       font-family: Poppins, sans-serif;
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -995,6 +981,10 @@ nav.main_menu.right {
 	background-color: #F0F0F0;
 	color: #909090;
 	font-size: 45px;
+}
+
+.flex-direction-nav a span:hover {
+	background-color: #004278;	
 }
 
 .viewall {
@@ -1363,4 +1353,11 @@ div.media {
 
 .arrow_carrot-down:before {
 	content: "\33";
+}
+
+.tos-slide > * {
+    max-height: 1280px;
+    max-width: 1280px;
+    height: 100%;
+    width: auto;
 }
