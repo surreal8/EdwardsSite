@@ -662,6 +662,10 @@ h4 {
 	padding: 5px 0px 10px 0px;
 }
 
+div.dates {
+	padding: 15px 0;
+}
+
 .dates {
 	font-size: 17px;
     color: #3a3a3a;
@@ -1251,10 +1255,6 @@ footer {
  
  .q_list.circle ul>li, .q_list.number ul>li {
 	 margin-bottom: 0px;
- }
- 
- .q_accordion_holder {
-	 padding-top: 20px;
  }
  
  #related_artist {
