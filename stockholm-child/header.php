@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php
-
-if( wp_is_mobile() && is_front_page() ){
-        $redirect_url = home_url('/') . 'home-mobile/';
-		header('Location: ' . $redirect_url);
-    }
-
 global $qode_options;
 global $wp_query;
 ?>

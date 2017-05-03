@@ -263,203 +263,6 @@ nav.main_menu>ul>li:not(:first-child):before {
     margin-right: 8px;
 }
 
-/*.q_tabs .tabs-nav li a {
-	padding: 0px;
-	font-weight: 500;
-	float: left;
-}*/
-
-/*theme overrides*/
-@media only screen and (max-width: 1000px) {
-	.main_menu {
-		display: block!important;
-	}
-	.logo_wrapper {
-		left: 0;
-	}
-	nav.main_menu.right {
-		float: none;
-		top: 57px;
-	}
-	nav.main_menu>ul>li:first-child>a {
-		padding-left: 0px;
-		padding-right: 10px;
-	}
-	.q_logo a {
-		left: 0;
-		top: -24px;
-		position: absolute;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.q_tabs .tabs-nav li, #glossaryNav li {
-		display: block;
-	}
-}
-
-/* For phones */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-	.portfolio_single .flexslider {
-    	height: 325px;
-	}
-	
-	.flex-viewport, .portfolio_slider .flex-viewport {
-    	max-height: 325px;
-	}
-	
-	.flexslider .slides img {
-		width: auto;
-		display: block;
-		margin: 0 auto;
-		max-height: 220px;
-		max-width: 250px;
-	}
-	
-	.flex-direction-nav {
-		display: none;
-	}
-	
-	.logo_wrapper {
-    	left: 0%;
-	}
-	
-	.main_menu {
-		display: block;
-	}
-	
-	nav.main_menu > ul > li > a {
-		font-size: 12px;
-	}
-	
-	.filter_holder ul.child li:not(:last-child) span:after, .q_tabs .tabs-nav li:not(:last-child) a:after, #glossaryNav li:not(:last-child) a:after {
-    	content: normal;
-	}
-	
-	.q_tabs .tabs-nav li a, #glossaryNav li a{
-		height: 15px;
-    	line-height: 15px;
-		text-align: left;
-    	margin-left: 5px;
-    	font-size: 13px;
-		padding: 3px 0;
-	}
-	
-	#glossaryNav, .q_tabs .tabs-nav {
-		background: none;
-		border-bottom: 1px solid #dedede;
-		margin-bottom: 20px;
-	}
-	
-	#glossaryNav li {
-    	display: block;
-	}
-	
-	.filter_holder ul.child {
-		top: 100px;
-	}
-	
-	.q_tabs.horizontal.center {
-		text-align: left;
-	}
-
-}
-
-/* For tablets */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-	.portfolio_single .flexslider {
-    	height: 525px;
-	}
-	
-	.flex-viewport, .portfolio_slider .flex-viewport {
-    	max-height: 525px;
-	}
-	
-	.flexslider .slides img {
-		width: auto;
-		display: block;
-		margin: 0 auto;
-		max-height: 415px;
-		max-width: 650px;
-	}
-	
-	.main_menu {
-		display: block;
-	}
-	
-	.q_tabs .tabs-nav li a, #glossaryNav li a {
-    	font-size: 12px;
-		height: 15px;
-    	line-height: 15px;
-		padding: 3px 0;
-	}
-	
-	#glossaryNav, .q_tabs .tabs-nav {
-		background: none;
-		border-bottom: 1px solid #dedede;
-		margin-bottom: 20px;
-		left: 0px;
-		text-align: left;
-	}
-	
-	.filter_holder ul.child {
-		top: 50px;
-	}
-	
-	.q_tabs.horizontal.center {
-		text-align: left;
-	}
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-	.filter_holder ul.child {
-		top: 75px;
-	}
-	
-	.q_tabs.horizontal.center {
-		text-align: left;
-	}
-  }
-
-
-/*For laptops*/
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-  	.portfolio_single .flexslider {
-    	height: 450px;
-	}
-	
-	.flex-viewport, .portfolio_slider .flex-viewport {
-    	max-height: 450px;
-	}
-	
-	.flexslider .slides img {
-		width: auto;
-		display: block;
-		margin: 0 auto;
-		max-height: 345px;
-		max-width: 800px;
-	}
-	
-	.main_menu {
-		display: block;
-	}
-}
-
 .flexslider .flex-prev {
 	left: 0px;
 	text-decoration: none;
@@ -1023,7 +826,7 @@ nav.main_menu.right {
 	left: 40%;
     position: relative;
     width: 368px;
-    height: 494px;
+    height: auto;
 }
 
 .edwardsHomeText div.wpb_wrapper {
@@ -1411,4 +1214,276 @@ div.media {
     padding: 20px;
     border-bottom: 2px solid #004278;
     margin: 0px 20px;
+}
+
+/*theme overrides for mobile*/
+
+@media only screen and (max-width: 1200px) {
+	li.themeHeading, li.themeHeading2 {
+    	padding: 0px 25px 0px 25px;
+	}
+	
+	.edwardsHome img.vc_single_image-img {
+    	left: 20%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.themes {
+		position: relative;
+		top: -210px;
+		text-align: center;
+	}
+	
+	li.themeHeading, li.themeHeading2 {
+    	padding: 60px 25px 0px 25px;
+	}
+	
+	li.themeHeading2 {
+    	float: none;
+	}
+	
+	.edwardsHome img.vc_single_image-img {
+    	left: 0%;
+	}
+	
+	.main_menu {
+		display: block!important;
+	}
+	.logo_wrapper {
+		left: 0;
+	}
+	
+	nav.main_menu>ul>li:first-child>a {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+	.q_logo a {
+		left: 0;
+		top: -24px;
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	
+}
+
+/* For phones */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	 
+	.edwardsHome img.vc_single_image-img {
+		left: 0%;
+		display: block;
+    	clear: both;
+	}
+
+	.edwardsHomeText div.wpb_wrapper {
+		display: block;
+    	clear: both;
+		position: relative;
+		line-height: 1.75;
+		padding: 35px 0px 0px 20px;
+		margin-bottom: -65px;
+		top: 0px;
+		padding: 0;
+		margin-bottom: 0;
+		right: 0;
+		border: 0;
+	} 
+	
+	.edwardsHomeText h6, .edwardsHomeText h3, .edwardsHomeText h5, .edwardsHomeText p {
+		left: 0;
+	}
+	
+	.edwardsHomeText p {
+    	width: 300px;
+	}
+	
+	.homepage_menu p {
+		top: 0;
+	}
+	
+	hr.doublelines {
+		display: none;
+	}
+	  
+	div.homepage_menu {
+		display: none;
+	}
+	
+	.themes {
+    	top: 0;
+	}
+	
+	li.themeHeading, li.themeHeading2 {
+		padding: 50px 0 0 0;
+	}
+	
+	nav.main_menu.right {
+		top: 37px;
+	}
+	
+	nav.main_menu ul li {
+		width: 50%;
+		height: 25px;
+	}
+	
+	.portfolio_single .flexslider {
+    	height: 325px;
+	}
+	
+	.flex-viewport, .portfolio_slider .flex-viewport {
+    	max-height: 325px;
+	}
+	
+	.flexslider .slides img {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+		max-height: 220px;
+		max-width: 250px;
+	}
+	
+	.flex-direction-nav {
+		display: none;
+	}
+	
+	.logo_wrapper {
+    	left: 0%;
+	}
+	
+	.main_menu {
+		display: block;
+	}
+	
+	nav.main_menu > ul > li > a {
+		font-size: 12px;
+	}
+	
+	.filter_holder ul.child li:not(:last-child) span:after, .q_tabs .tabs-nav li:not(:last-child) a:after, #glossaryNav li:not(:last-child) a:after {
+    	content: normal;
+	}
+	
+	.q_tabs .tabs-nav li a, #glossaryNav li a{
+		height: 15px;
+    	line-height: 15px;
+		text-align: left;
+    	margin-left: 5px;
+    	font-size: 13px;
+		padding: 3px 0;
+	}
+	
+	#glossaryNav, .q_tabs .tabs-nav {
+		background: none;
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 20px;
+	}
+	
+	#glossaryNav li {
+    	display: block;
+	}
+	
+	.filter_holder ul.child {
+		top: 100px;
+	}
+	
+	.q_tabs.horizontal.center {
+		text-align: left;
+	}
+
+}
+
+/* For tablets */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.portfolio_single .flexslider {
+    	height: 525px;
+	}
+	
+	.flex-viewport, .portfolio_slider .flex-viewport {
+    	max-height: 525px;
+	}
+	
+	.flexslider .slides img {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+		max-height: 415px;
+		max-width: 650px;
+	}
+	
+	.main_menu {
+		display: block;
+	}
+	
+	.q_tabs .tabs-nav li a, #glossaryNav li a {
+    	font-size: 12px;
+		height: 15px;
+    	line-height: 15px;
+		padding: 3px 0;
+	}
+	
+	#glossaryNav, .q_tabs .tabs-nav {
+		background: none;
+		border-bottom: 1px solid #dedede;
+		margin-bottom: 20px;
+		left: 0px;
+		text-align: left;
+	}
+	
+	.filter_holder ul.child {
+		top: 50px;
+	}
+	
+	.q_tabs.horizontal.center {
+		text-align: left;
+	}
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.filter_holder ul.child {
+		top: 75px;
+	}
+	
+	.q_tabs.horizontal.center {
+		text-align: left;
+	}
+  }
+
+
+/*For laptops*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  	.portfolio_single .flexslider {
+    	height: 450px;
+	}
+	
+	.flex-viewport, .portfolio_slider .flex-viewport {
+    	max-height: 450px;
+	}
+	
+	.flexslider .slides img {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+		max-height: 345px;
+		max-width: 800px;
+	}
+	
+	.main_menu {
+		display: block;
+	}
 }
