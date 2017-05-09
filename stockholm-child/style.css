@@ -1222,6 +1222,10 @@ blockquote, blockquote > p {
 	color: #004278;
 	padding: 10px 0;
 }
+
+button.pdfemb-fs {
+    display: none;
+}
 /*theme overrides for mobile*/
 
 @media only screen and (max-width: 1200px) {
