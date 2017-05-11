@@ -41,6 +41,10 @@ $j(document).ready(function() {
 	$j('body').on('contextmenu', 'img', function(e) {
 	  return false;
 	});
+	
+	$j('body').on('contextmenu', 'canvas', function(e) {
+	  return false;
+	});
 
 	$j('.content').css('min-height',$j(window).height()-$j('header.page_header').height()-$j('footer').height());
 

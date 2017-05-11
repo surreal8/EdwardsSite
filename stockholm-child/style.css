@@ -139,7 +139,7 @@ a, p a {
     color: #004278;
 	text-decoration: underline;
 	font-weight: 500;
-	font-family: 'Garibaldi-Medium', serif; 
+	font-family: 'Lato', sans-serif;
 	
 }
 
@@ -463,6 +463,20 @@ h4 {
     color: #3a3a3a;
     font-weight: normal;
 	padding: 5px 0px 10px 0px;
+}
+
+.medialist h4 {
+	top: -30px;
+	position: relative;
+}
+
+.medialist p {
+	top: -30px;
+	position: relative;
+}
+
+.medialist img {
+	margin: 0px 20px 50px 0px;
 }
 
 div.dates {
@@ -946,6 +960,7 @@ div.homepage_menu {
 	text-decoration: none;
 	color: #272727;
 	padding: 0px 10px;
+	font-family: 'Amiri', serif;
 }
 
 .homepage_menu a:hover{
@@ -1133,7 +1148,7 @@ div.media {
 }
 
 .acquisitions_artists li, .letters li {
-	width: 23%;
+	width: 22%;
     display: inline-table;
     padding: 3px 20px 3px 0px;
 }
@@ -1176,8 +1191,8 @@ div.media {
 }
 
 .tos-slide > * {
-    max-height: 1280px;
-    max-width: 1280px;
+    max-height: 1024px;
+    max-width: 1024px;
     height: 100%;
     width: auto;
 }

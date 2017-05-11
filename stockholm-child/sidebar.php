@@ -56,7 +56,7 @@ $sidebar_id =  $qode_page_id;
 				echo '<ul class="related-list">';
 				if (get_field('artist_acquisitions')) {
 				  echo '<li class="relatedside">';
-				  echo '<h3 class="related">Artist Aquisitions</h3>';
+				  echo '<h3 class="related">Artist Acquisitions</h3>';
 				  echo '<p>' . get_field('artist_acquisitions') . '</p>'; 
 				  echo '</li>';
 				}
