@@ -1258,7 +1258,15 @@ button.pdfemb-fs {
 	
 	.main_menu {
 		display: block!important;
+		clear: both;
 	}
+	
+	nav.main_menu.right {
+    top: -62px;
+    left: 0px;
+	float: none;
+	}
+	
 	.logo_wrapper {
 		left: 0;
 	}
@@ -1274,7 +1282,40 @@ button.pdfemb-fs {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+	nav.main_menu.right {
+    	top: -103px;
+	}
+	.edwardsHome img.vc_single_image-img {
+		left: 0%;
+		top: -50px;
+		width: 60%;
+	}
+
+	.edwardsHomeText div.wpb_wrapper {
+		position: relative;
+		line-height: 1.75;
+		top: -350px;
+		padding: 0;
+		margin-bottom: 0;
+		border: 0;
+	} 
+	
+	.edwardsHomeText h6, .edwardsHomeText h3, .edwardsHomeText h5, .edwardsHomeText p {
+		left: 0;
+	}
+	
+	.edwardsHomeText p {
+    	width: 350px;
+	}
+	
+	.homepage_menu a {
+		font-size: 18px;
+	}
+	
+	li.themeHeading, li.themeHeading2 {
+		padding: 0px 25px 0px 25px;
+	}
 	
 }
 
@@ -1288,6 +1329,8 @@ button.pdfemb-fs {
 		left: 0%;
 		display: block;
     	clear: both;
+		top: -70px;
+    	width: 100%;
 	}
 
 	.edwardsHomeText div.wpb_wrapper {
@@ -1295,9 +1338,7 @@ button.pdfemb-fs {
     	clear: both;
 		position: relative;
 		line-height: 1.75;
-		padding: 35px 0px 0px 20px;
-		margin-bottom: -65px;
-		top: 0px;
+		top: -52px;
 		padding: 0;
 		margin-bottom: 0;
 		right: 0;
@@ -1326,18 +1367,32 @@ button.pdfemb-fs {
 	
 	.themes {
     	top: 0;
+		text-align: left;
+	}
+	
+	.themes img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.themes p {
+		width: 100%;
+		padding: 0;
+		text-align: left;
 	}
 	
 	li.themeHeading, li.themeHeading2 {
-		padding: 50px 0 0 0;
+		padding: 0 0 0 0;
+		display: block;
+		width: 100%;
 	}
 	
 	nav.main_menu.right {
-		top: 37px;
+		top: -100px;
 	}
 	
 	nav.main_menu ul li {
-		width: 50%;
+		width: 33%;
 		height: 25px;
 	}
 	
