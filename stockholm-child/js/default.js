@@ -312,7 +312,7 @@ function headerSize($scroll){
 
 	//take value from theme options
 	else {
-		sticky_amount = scroll_amount_for_sticky;
+		sticky_amount = 0;
 	}
 
 	if($j('header').hasClass('regular')){

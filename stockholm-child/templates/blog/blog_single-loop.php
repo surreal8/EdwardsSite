@@ -343,6 +343,14 @@ $_post_format = get_post_format();
 						</div>
 						<?php } ?>
 						<div class="post_content">
+                            <button class="goback" onclick="goBack()">Go Back</button>
+                            <p>&nbsp;</p>
+                            
+                            <script>
+                            function goBack() {
+                                window.history.back();
+                                }
+                            </script>
 							<h2><span><?php the_title(); ?></span></h2>
                             <?php
 							if (get_field('origin_posts')) { 

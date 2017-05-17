@@ -1019,6 +1019,7 @@ div.themeHeading {
 .themeHeading a{
 	text-decoration: none;
 	color: #272727;
+	font-family: 'Amiri', serif;
 }
 
 .themeHeading a:hover{
@@ -1193,7 +1194,6 @@ div.media {
 .tos-slide > * {
     max-height: 1024px;
     max-width: 1024px;
-    height: 100%;
     width: auto;
 }
 
@@ -1241,6 +1241,32 @@ blockquote, blockquote > p {
 button.pdfemb-fs {
     display: none;
 }
+
+.drop_down .second {
+	border-top: 5px solid #004278;	
+}
+
+.drop_down .second .inner ul li a:hover {
+	color: #004278;
+}
+
+img {
+	user-drag: none; 
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-ms-user-select: none;
+}
+
+ul.acquisitions {
+	height: 1150px;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+}
+
 /*theme overrides for mobile*/
 
 @media only screen and (max-width: 1200px) {
@@ -1298,9 +1324,6 @@ button.pdfemb-fs {
 }
 
 @media only screen and (max-width: 800px) {
-	nav.main_menu.right {
-    	top: -103px;
-	}
 	.edwardsHome img.vc_single_image-img {
 		left: 0%;
 		top: -50px;
