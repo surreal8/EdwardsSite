@@ -907,6 +907,7 @@ hr.doublelines {
     letter-spacing: 1px;
 	position: relative;
 	top: -315px;
+	overflow: visible;
 }
 
 hr.doublelines:after {
