@@ -980,7 +980,7 @@ div.homepage_menu {
 }
 
 .themes ul {
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 }
 
 li.themeHeading, li.themeHeading2 {
@@ -1192,9 +1192,8 @@ div.media {
 }
 
 .tos-slide > * {
-    max-height: 1024px;
     max-width: 1024px;
-    width: auto;
+    height: auto;
 }
 
 .projects_holder article .icons_holder_inner {
@@ -1264,7 +1263,13 @@ ul.acquisitions {
 	display:flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	
+}
+
+ul.writings {
+	height: 630px;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 /*theme overrides for mobile*/
@@ -1303,9 +1308,8 @@ ul.acquisitions {
 	}
 	
 	nav.main_menu.right {
-    top: -62px;
+    top: -103px;
     left: 0px;
-	float: none;
 	}
 	
 	.logo_wrapper {
@@ -1324,6 +1328,12 @@ ul.acquisitions {
 }
 
 @media only screen and (max-width: 800px) {
+	nav.main_menu.right {
+		top: -64px;
+		left: 0px;
+		float: none;
+	}
+	
 	.edwardsHome img.vc_single_image-img {
 		left: 0%;
 		top: -50px;
@@ -1441,6 +1451,12 @@ ul.acquisitions {
 	.flex-viewport, .portfolio_slider .flex-viewport {
     	max-height: 325px;
 	}
+
+	.flex-viewport {
+    	width: 425px;
+	    left: -62px;
+	    top: -75px;
+	}
 	
 	.flexslider .slides img {
 		width: auto;
@@ -1449,6 +1465,9 @@ ul.acquisitions {
 		max-height: 220px;
 		max-width: 250px;
 	}
+
+	.tos-slide > * {
+		max-width: 100%;
 	
 	.flex-direction-nav {
 		display: none;
